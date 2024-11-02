@@ -2,26 +2,26 @@
 
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
     data-assets-path="../assets/" data-template="vertical-menu-template-free">
-@include('merchent.partials.head')
+@include('merchant.partials.head')
 
 <body>
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
         <div class="layout-container">
 
-            @include('merchent.partials.sidebar')
+            @include('merchant.partials.sidebar')
 
             <!-- Layout container -->
             <div class="layout-page">
 
-                @include('merchent.partials.navbar')
+                @include('merchant.partials.navbar')
 
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
 
                     @yield('content')
 
-                    @include('merchent.partials.footer')
+                    @include('merchant.partials.footer')
 
                     <div class="content-backdrop fade"></div>
                 </div>
@@ -35,7 +35,7 @@
     </div>
     <!-- / Layout wrapper -->
 
-    @include('merchent.partials.scripts')
+    @include('merchant.partials.scripts')
 
 </body>
 

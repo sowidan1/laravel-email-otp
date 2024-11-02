@@ -1,6 +1,6 @@
-@extends('merchent.master')
+@extends('merchant.master')
 
-@section('title', 'Merchent index')
+@section('title', 'merchant index')
 
 @section('content')
 
