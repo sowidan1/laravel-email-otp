@@ -18,3 +18,12 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+/**
+ * Merchent Route
+ */
+Route::prefix('merchent')->name('merchent.')->group(function () {
+    Route::view('/', 'merchent.index')->name('index');
+    Route::view('/register', 'merchent.auth.register')->name('register');
+    Route::view('/login', 'merchent.auth.login')->name('login');
+});
